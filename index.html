@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+ 
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+  <main class="everything">
+    <!-- Sign-up form start -->
+    <picture>
+      <source class="display2" srcset="assets/images/illustration-sign-up-desktop.svg" media="(min-width: 769px)">
+      <img class="display" src="assets/images/illustration-sign-up-mobile.svg" alt="display">
+    </picture>
+    <div class="info">
+      <h2>
+        Stay updated!
+      </h2>
+      <p class="text1">
+        Join 60,000+ product managers receiving monthly updates on:
+      </p>
+
+      <div class="text2-container">
+        <img class="checkmark" src="assets/images/icon-list.svg" alt="checkmark">
+        <p class="text2">
+          Product discovery and building what matters
+        </p>
+      </div>
+
+      <div class="text2-container">
+        <img class="checkmark" src="assets/images/icon-list.svg" alt="checkmark">
+        <p class="text2">
+          Measuring to ensure updates are a success
+        </p>
+      </div>
+
+      <div class="text2-container">
+        <img class="checkmark" src="assets/images/icon-list.svg" alt="checkmark">
+        <p class="text2">
+          And much more!
+        </p>
+      </div>
+
+      <form action="#" id="form">
+        <p class="text3">
+          Email address
+          <span id="error-text"></span>
+        </p>
+        <input type="email" id="email" placeholder="email@company.com">
+        <button type="submit" id="submit">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+  </main>
+  <section class="hidden everything2">
+    <div class="container">
+      <div class="info2">
+        <img src="assets/images/icon-success.svg" alt="big-checkmark">
+        <h2 class="h2after">
+          Thanks for subscribing!
+        </h2>
+        <p class="text4">
+          A confirmation email has been sent to <span class="email2">ash@loremcompany.com.</span>
+          Please open it and click the button inside to confirm your subscription.  
+        </p>
+        <button class="dismiss refresh-button">
+          Dismiss message
+        </button>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
